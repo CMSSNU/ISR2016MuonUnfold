@@ -2,10 +2,10 @@
 
 make lib
 
-root
-.L ISR2016MuonUnfold.cc
-SaveBinning()
-SaveHist()
-Unfold()
-Compare("hdataUnfold","hmcGen_GenAxis",0,80,100)
+root  
+.L ISR2016MuonUnfold.cc  
+SaveBinning()  
+SaveHist()  
+Unfold()  
+Compare("hdataUnfold","hmcGen_GenAxis",0,80,100)  
 
