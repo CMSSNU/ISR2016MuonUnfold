@@ -4,8 +4,9 @@ make lib
 
 root  
 .L ISR2016MuonUnfold.cc  
-SaveBinning()  
-SaveHist()  
-Unfold()  
-Compare("hdataUnfold","hmcGen_GenAxis",0,80,100)  
+SaveHist("hist.root")  
+Unfold("hist.root","unfold.root",MODE,SCANMETHOD,f)  
+//MODE -1:PrivateRegularization 0:NoRegularization 1:SizeRegularization 2:Derivative 3:Curvacure  
+ 
+Compare("unfold.root","hdataUnfold","hmcGen_GenAxis",0,80,100)  
 
